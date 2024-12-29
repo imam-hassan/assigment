@@ -1,5 +1,5 @@
 class PasswordsController < ApplicationController
-  
+  allow_unauthenticated_access only: %i[ new create]
   before_action :set_user_by_token, only: %i[ edit update ]
 
   def new
