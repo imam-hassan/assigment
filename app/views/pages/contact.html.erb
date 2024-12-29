@@ -1,4 +1,18 @@
-<nav>
-<%= link_to "Log out","logout",method: :delete if authenticated? %>
+<nav class="ml-auto" style="margin-left:900px;">
+  <ul class="list-none p-0 pl-2 pr-5 flex justify-end " >
+    <li class="mr-5" style="margin-left:15px;"><%= link_to "Home","/pages/home"%></li>
+    <li class="mr-5" style="margin-left:15px;"><%= link_to "About-us","/pages/about"%></li>
+    <li class="mr-5" style="margin-left:15px;"><%= link_to "Works","/pages/works"%></li>
+    <li class="mr-5" style="margin-left:15px;"><%= link_to "Contact-us","/pages/contact"%><li>
+    
+<li class="mr-5" style="margin-left:15px;" ><%= link_to "Log out","logout",method: :delete if authenticated? %></li>
+  
+
+    
+   
+    
+  </ul>
 </nav>
+</div>
+
 <h1 class="text-3xl font-bold underline">WELCOME TO CONTACT<h1>
