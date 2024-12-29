@@ -36,6 +36,10 @@ Rails.application.routes.draw do
   get "pages/logout", to:
   "sessions#destroy"
 
+  
+  get "sessions/login", to:
+  "sessions#new"
+
  
 
 
